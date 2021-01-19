@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    color: #333;
+}
+
+/*---- REUSABLE COMPONENTS ------*/
+
+.title--secondary {
+    width: 100%;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 300;
+    color: #335491;
+    letter-spacing: .3rem;
+}
+
+.title--tertiary {
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 300;
+    color: #335491;
+}
+
+.title--quart {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: #335491;
+}
+
+.title--fifth {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #335491;
+    margin-bottom: 1rem;
+}
+
+
+.btn {
+    font-size: 2rem;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    background-color: cornflowerblue;
+    border-radius: 25px;
+    padding: 1rem; 
+    display: inline-block;
+    width: 12rem;
+    transition: all .3s;
+}
+
+.btn:hover,
+.btn:active {
+    color: #333;
+    background-color: #82a2dd;
+    transform: scale(1.1);
+}
+
+p {
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+/*---- HEADER ------*/
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/vast.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.logo img {
+    width: 10rem;
+}
+
+nav {
+    width: 40%;
+}
+
+.navi--list {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.navi--list-items,
+.navi--list-items a {
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+    
+    margin-right: 1rem;
+}
+
+.navi--list-items a:hover,
+.navi--list-items a:active {
+    border-bottom: solid 2px; #333;
+}
+
+.hero--box {
+    margin: 0 auto;
+    width: 75%;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero--title-box {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-left: 2rem;
+}
+
+.hero--title {
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 300;
+    margin: 2rem 0;
+    letter-spacing: .6rem;
+}
+
+
+/*---- ABOUT ------*/
+
+.about {
+    height: 100vh;
+    background-color: #f3f2f2;
+    position: relative;
+}
+
+.about--container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    width: 75%;
+    height: 80%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about--blurb {
+    width: 50rem;
+}
+
+.about--img {
+    width: 35rem;
+}
+
+
+/*---- TOUR TYPES ------*/
+
+.tour-types {
+    height: 100vh;
+    position: relative;
+}
+
+.tour-type--container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+.tour-type--container h2 {
+    margin-bottom: 5rem;
+}
+
+.tour-box {
+    background-color: #e0e2e7;
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 5rem;
+}
+
+.tour-box h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.3rem;
+    letter-spacing: .2rem;
+}
+
+.tour-box ul {
+    font-size: 1.6rem;
+    list-style: none;
+    text-align: center;
+}
+
+.tour-box ul li {
+    margin: 1rem 0;
+}
+
+.tour-box p {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    color: #335491;
+}
+
+.tour-img {
+    width: 100%;
+}
+
+/*---- REGIONS ------*/
+
+.regions {
+    height: 100vh;
+}
+
+.regions--container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.regions--map {
+    width: 30rem;
+}
+
+.regions--blurb {
+    width: 80rem;
+}
+
+/*---- TEAM ------*/
+
+.team {
+    height: 150vh;
+    background-color: #f3f2f2;
+    position: relative;
+    
+}
+
+.team--container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5rem 0;
+}
+
+.team--container h2 {
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+}
+
+.team-member {
+    width: 80%;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: center;
+}
+
+.team-member h4 {
+    margin-bottom: 2rem;
+}
+
+.team-member--img {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 15rem;
+    width: 15rem;
+}
+
+.team-member--description {
+    margin-left: 2rem;
+}
+
+
+/*---- FOOTER ------*/
+
+footer {
+    background-color: cornflowerblue;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer .logo {
+    transform: translate(-1.5rem);
+}
+
+footer ul {
+    list-style: none;
+    font-size: 1.6rem;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+footer p {
+    margin-bottom: 1rem;
+}
+
+footer ul li {
+    margin-bottom: 1rem;
+}
+
+.footer--container {
+    margin-right: 3rem;
+    text-align: center;
+}
